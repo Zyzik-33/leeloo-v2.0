@@ -1,3 +1,10 @@
 {
   "git.ignoreLimitWarning": true
+  
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#C6AB53",
+    "terminalCursor.foreground": "#6F2560"
+  }
+
 }
+
