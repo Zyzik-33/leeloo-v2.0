@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: process.env.API_DATO_CMS,
+        apiToken: ,
       },
     },
     `gatsby-transformer-sharp`,

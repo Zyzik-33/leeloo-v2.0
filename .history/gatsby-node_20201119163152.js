@@ -28,16 +28,14 @@ exports.createPages = async ({ graphql, actions }) => {
     // Create blog post pages.
     result.data.allDatoCmsArticle.nodes.forEach(post => {
 
-      const slugifiedTitle = slugify(post.title, {
-        lower: true
-      });  
-      console.log(slugifiedTitle);
+      const slugifyTitle = syugify(post.title);  
+
       createPage({
         // Path for this page — required
-        path: `articles/${slugifiedTitle}`,
+        path: `articles/${post.frontmatter.slug}`,
         component: blogPostTemplate,
         context: {
-          slug: slugifiedTitle,
+          slug: post.frontmatter.slug,
         },
       })
     })

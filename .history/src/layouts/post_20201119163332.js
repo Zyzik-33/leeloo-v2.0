@@ -26,10 +26,10 @@ import { graphql } from 'gatsby'
 const PostLayout = ({ data }) => {
   return (
     <div>
-      {/* <h1>{data.mdx.frontmatter.title}</h1>
+      <h1>{data.mdx.frontmatter.title}</h1>
       <p>{data.mdx.frontmatter.author}</p>
       <Image src={data.mdx.frontmatter.featuredImage.childImageSharp.fixed} />
-      <MDXRenderer>{data.mdx.body}</MDXRenderer> */}
+      <MDXRenderer>{data.mdx.body}</MDXRenderer>
     </div>
   )
 }

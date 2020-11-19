@@ -6,8 +6,8 @@
 
 // You can delete this file if you're not using it
 
+
 const path = require(`path`)
-const slugify = require('slugify')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -26,18 +26,13 @@ exports.createPages = async ({ graphql, actions }) => {
     }
 
     // Create blog post pages.
-    result.data.allDatoCmsArticle.nodes.forEach(post => {
-
-      const slugifiedTitle = slugify(post.title, {
-        lower: true
-      });  
-      console.log(slugifiedTitle);
+    result.data.allMdx.nodes.forEach(post => {
       createPage({
         // Path for this page — required
-        path: `articles/${slugifiedTitle}`,
+        path: `articles/${post.frontmatter.slug}`,
         component: blogPostTemplate,
         context: {
-          slug: slugifiedTitle,
+          slug: post.frontmatter.slug,
         },
       })
     })
