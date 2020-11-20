@@ -11,9 +11,15 @@ module.exports = {
     `gatsby-plugin-layout`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        fonts: ['work sans:200,400,700'],
+        fonts: [
+          {
+            family: `Work Sans`,
+            variants: [`200`, `400`, `700`]
+          },
+        ],
+        display: 'swap'
       },
     },
     {
@@ -23,13 +29,13 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `articles`,
-    //     path: `${__dirname}/src/data/articles`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `articles`,
+        path: `${__dirname}/src/data/articles`,
+      },
+    },
     {
       resolve: `gatsby-source-datocms`,
       options: {

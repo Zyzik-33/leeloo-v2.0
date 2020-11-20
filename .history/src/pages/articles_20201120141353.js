@@ -24,7 +24,7 @@ const ArticlesPage = ({ data }) => {
       <ArticlesWrapper>
       {nodes.map(({title, featuredImage}) => (
         <ArticlePreview 
-          key={slugify(title, {lower: true})} 
+          key={title} 
           title={title} 
           image={featuredImage.fluid} 
           slug={slugify(title, {lower: true})} 

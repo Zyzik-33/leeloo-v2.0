@@ -17,14 +17,14 @@ const pageData = {
 }
 
 const ArticlesPage = ({ data }) => {
-  const {allDatoCmsArticle: {nodes}} = data;
+  const {allDatoCmsArticles: {nodes}} = data;
   return (
     <>
       <PageInfo title={pageData.title} paragraph={pageData.paragraph} />
       <ArticlesWrapper>
       {nodes.map(({title, featuredImage}) => (
         <ArticlePreview 
-          key={slugify(title, {lower: true})} 
+          key={title} 
           title={title} 
           image={featuredImage.fluid} 
           slug={slugify(title, {lower: true})} 

@@ -20,7 +20,8 @@ exports.createPages = async ({ graphql, actions }) => {
 
     const slugifiedTitle = slugify(post.title, {
       lower: true
-    });
+    });  
+    console.log(slugifiedTitle);
     createPage({
       // Path for this page — required
       path: `articles/${slugifiedTitle}`,

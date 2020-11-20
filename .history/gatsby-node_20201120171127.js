@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
     createPage({
       // Path for this page — required
-      path: `articles/${slugifiedTitle}`,
+      path: `/articles/${slugifiedTitle}`,
       component: blogPostTemplate,
       context: {
         id: post.id,

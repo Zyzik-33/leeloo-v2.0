@@ -1,5 +1,6 @@
 import React from 'react'
-import Image from 'gatsby-image'
+// import Image from 'gatsby-image'
+// import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { graphql } from 'gatsby'
 
 export const query = graphql`
@@ -7,8 +8,8 @@ export const query = graphql`
     datoCmsArticle (id: {eq: $id}) {
       title
       featuredImage {
-        fluid {
-          ...GatsbyDatoCmsFluid_tracedSVG
+        fixed(width: 500) {
+          ...GatsbyDatoCmsFixed_tracedSVG
         }
       }
       author
@@ -24,8 +25,8 @@ export const query = graphql`
         ... on DatoCmsImage {
           id
           imageData {
-            fluid {
-              ...GatsbyDatoCmsFluid_tracedSVG
+            fixed(width: 500) {
+              ...GatsbyDatoCmsFixed_tracedSVG
             }
           }
         }
@@ -39,16 +40,17 @@ const PostLayout = ({ data }) => {
     <div>
       <h1>{data.datoCmsArticle.title}</h1>
       <p>{data.datoCmsArticle.author}</p>
-      <Image fluid={data.datoCmsArticle.featuredImage.fluid} />
+      <Image fixed={data.datoCmsArticle.f} />
       <div>{data.datoCmsArticle.articleContent.map(item => {
         const itemKey = Object.keys(item)[2];
+        console.log(itemKey);
         switch(itemKey){
           case'headingContent':
-            return <h2 key={item.id}>{item[itemKey]}</h2>;
+            return <h2>{item[itemKey]}</h2>;
           case'paragfaphContent':
-            return <p key={item.id}>{item[itemKey]}</p>;
+            return <p>{item[itemKey]}</p>;
           case'imageData':
-            return <Image key={item.id} fluid={item[itemKey].fluid} />;
+            return <Image fixed={item[itemKey].fixed} />;
           default: 
             return null;
         }

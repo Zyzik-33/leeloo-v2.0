@@ -34,7 +34,7 @@ const StyledImage = styled(Image)`
 `;
 
 const Preview = ({ title, image, slug }) => (
-  <PreviewWrapper to={`/articles/${slug}`}>
+  <PreviewWrapper to={slug}>
     <StyledImage fluid={image} />
     <PreviewInfoLabel>
       <h2>{title}</h2>

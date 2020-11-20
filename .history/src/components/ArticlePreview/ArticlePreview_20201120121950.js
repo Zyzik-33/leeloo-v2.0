@@ -1,4 +1,5 @@
 import React from 'react'
+import slugify from 'slugify'
 import styled from 'styled-components'
 import Image from 'gatsby-image'
 import { Link } from 'gatsby'

@@ -17,18 +17,13 @@ const pageData = {
 }
 
 const ArticlesPage = ({ data }) => {
-  const {allDatoCmsArticle: {nodes}} = data;
+  const {allMdx: {nodes}} = data;
   return (
     <>
       <PageInfo title={pageData.title} paragraph={pageData.paragraph} />
       <ArticlesWrapper>
-      {nodes.map(({title, featuredImage}) => (
-        <ArticlePreview 
-          key={slugify(title, {lower: true})} 
-          title={title} 
-          image={featuredImage.fluid} 
-          slug={slugify(title, {lower: true})} 
-        />
+      {nodes.map(({excerpt, frontmatter: {title, slug, author, featuredImage}}) => (
+        <ArticlePreview key={title} title={title} image={featuredImage.childImageSharp.fluid} slug={slugify} />
       ))}
       </ArticlesWrapper>
     </>
@@ -37,7 +32,7 @@ const ArticlesPage = ({ data }) => {
 
 export const query = graphql`
   {
-    allDatoCmsArticle {
+    allDatoCmsArticles {
       nodes {
         title
         author
