@@ -1,0 +1,3 @@
+[build]
+  base    = "leeloo_v2.0/"
+  command = "npm run build"
