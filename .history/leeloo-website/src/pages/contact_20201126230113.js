@@ -35,7 +35,7 @@ const ContactPage = () => (
         <Formik
             initialValues={{ name: '', email: '', message: '' }}
             onSubmit={(values, { setSubmitting }) => {
-                axios.post('https://us-central1-leeloo-v2.cloudfunctions.net/sendEmail/', values)
+                axios.post('', values)
                 .then((res) => {
                     console.log(res);
                     setSubmitting(false);

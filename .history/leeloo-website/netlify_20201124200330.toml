@@ -1,0 +1,8 @@
+[build]
+  base    = "leeloo_v2.0/leeloo-website"
+  command = "npm run build"
+  publish = "public/"
+
+
+  70 1010 1469 0000 3922 3100 0000
+  proszę o wydanie karty pobytu bez adresu zameldowania.
