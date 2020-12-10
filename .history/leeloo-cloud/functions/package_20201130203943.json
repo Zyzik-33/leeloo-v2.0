@@ -22,13 +22,5 @@
   "devDependencies": {
     "firebase-functions-test": "^0.2.0"
   },
-  "private": true,
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  }
+  "private": true
 }
