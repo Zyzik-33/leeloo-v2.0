@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/about.js"],"names":["AboutPage"],"mappings":"6FAAA,gCAQeA,UANG,kBAChB,oCACE","file":"component---src-pages-about-js-2216a6028a5b128cc2d0.js","sourcesContent":["import React from \"react\"\n\nconst AboutPage = () => (\n  <>\n    <h1>AboutPage</h1>\n  </>\n)\n\nexport default AboutPage\n"],"sourceRoot":""}
