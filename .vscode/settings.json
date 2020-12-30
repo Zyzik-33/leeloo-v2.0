@@ -5,10 +5,30 @@
     "editorCursor.foreground": "#C6AB53",
     "terminalCursor.foreground": "#6F2560"
   },
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 0.3,
+  "editor.fontSize": 18,
+  "terminal.integrated.fontSize": 18,
+  "breadcrumbs.enabled": true,
+  "editor.fontFamily": "'Fire Code', monospace",
+  "editor.fontLigatures": false,
+  "editor.wordWrap": "on",
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.options": {
+    "configFile": "/Users/yuriidrahomaretskyi/eduweb/typescript/.eslintrc.js"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "typescript"],
 
 }
