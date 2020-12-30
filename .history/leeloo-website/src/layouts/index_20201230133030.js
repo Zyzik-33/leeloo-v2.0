@@ -1,11 +1,13 @@
 import React from "react"
 import GlobalStyle from "../assets/styles/globalStyles"
-import Navbar from "../components/Navigation/Navbar"
+import Navigation from "../components/Navigation/Navigation"
+import 
 
 const MainLayout = ({ children }) => (
   <>
     <GlobalStyle />
-    <Navbar />
+    <Navigation />
+    <
     {children}
   </>
 )
