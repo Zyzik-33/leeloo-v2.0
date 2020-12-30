@@ -22,8 +22,8 @@ const ContentWrapper = styled.div`
     width: 40%;
   }
   @media (max-width: 1024px) {
-    margin-top: -7rem;
     width: 100%;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
