@@ -21,24 +21,6 @@ const ContentWrapper = styled.div`
     margin: 20px 0 40px;
     width: 40%;
   }
-  @media (max-width: 1024px) {
-    margin-top: -7rem;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-      font-size: 85px;
-      margin: 0;
-    }
-    p {
-      margin: 20px 0 40px;
-      width: 40%;
-    }
-  }
 `
 
 const StyledImage = styled(Image)`
@@ -48,14 +30,7 @@ const StyledImage = styled(Image)`
   width: 40%;
   height: 100vh;
   object-fit: cover;
-  @media (max-width: 1024px) {
-    position: absolute !important;
-    top: 86%;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  } ;
+  @media (max-width: );
 `
 
 const IndexPage = ({ data }) => (

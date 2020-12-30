@@ -22,13 +22,13 @@ const ContentWrapper = styled.div`
     width: 40%;
   }
   @media (max-width: 1024px) {
-    margin-top: -7rem;
     width: 100%;
-    text-align: center;
+    height: calc(100vh - 80px);
+    text-align: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 
     h1 {
       font-size: 85px;

@@ -22,8 +22,9 @@ const ContentWrapper = styled.div`
     width: 40%;
   }
   @media (max-width: 1024px) {
-    margin-top: -7rem;
+    ${"" /* margin-top: 2rem; */}
     width: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
