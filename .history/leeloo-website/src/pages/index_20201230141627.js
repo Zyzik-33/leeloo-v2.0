@@ -45,7 +45,7 @@ const IndexPage = ({ data }) => (
         praktycznie niezmienionym.
       </p>
     </ContentWrapper>
-    <StyledImage fluid={data.file.childImageSharp.fluid} />
+    {/* <StyledImage fluid={data.file.childImageSharp.fluid}/> */}
   </>
 )
 
