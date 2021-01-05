@@ -1,10 +1,24 @@
-require('dotenv').config();
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `LeeLoo website`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `zyzik`,
+    social: [
+      {
+        name: "Source",
+        url: "https://github.com/epilande/gatsby-theme-gallery",
+      },
+      {
+        name: "Twitter",
+        url: "https://twitter.com/_epilande",
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/epilande",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: ['work sans:200,400,700'],
+        fonts: ["work sans:200,400,700"],
       },
     },
     {
@@ -33,11 +47,12 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: process.env.API_DATO_CMS
+        apiToken: process.env.API_DATO_CMS,
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-theme-gallery`,
     `gatsby-plugin-mdx`,
   ],
 }

@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
     "@mdx-js/mdx": "^1.6.21",
     "@mdx-js/react": "^1.6.21",
     "axios": "^0.21.0",
@@ -24,6 +26,7 @@
     "gatsby-plugin-styled-components": "^3.5.0",
     "gatsby-source-datocms": "^2.5.7",
     "gatsby-source-filesystem": "^2.6.0",
+    "gatsby-theme-gallery": "^1.0.2",
     "gatsby-transformer-sharp": "^2.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
