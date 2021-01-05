@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const FooterBar = styled.div`
   width: 100%;
-  height: 20px;
+  height: 3rem;
   background-color: red;
 `
 
