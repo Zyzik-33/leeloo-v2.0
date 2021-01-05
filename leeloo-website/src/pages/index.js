@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Image from "gatsby-image"
-import Post from "../components/Post/Post"
+// import Post from "../components/Post/Post"
 
 const ContentWrapper = styled.div`
   width: 60%;
@@ -31,12 +31,12 @@ const ContentWrapper = styled.div`
     align-items: center;
 
     h1 {
-      font-size: 85px;
-      margin: 0;
+      font-size: 3rem;
+      margin-top: 3rem;
     }
     p {
-      margin: 20px 0 40px;
-      width: 40%;
+      margin: 20px 0 10px;
+      width: 100%;
     }
   }
 `
@@ -61,14 +61,16 @@ const StyledImage = styled(Image)`
 const IndexPage = ({ data }) => (
   <>
     <ContentWrapper>
-      <Post />
-      <h1>Hello leeloo</h1>
+      {/* <Post /> */}
+      <h1>Mam na imię Liliia</h1>
       <p>
-        Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
-        przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez
-        nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków
-        później zaczął być używany przemyśle elektronicznym, pozostając
-        praktycznie niezmienionym.
+        Od dzieciństwa byłam zafascynowana fotografią, a dziś, stała się ona
+        moją największą pasją i profesją. Najcenniejsze w robieniu zdjęć jest
+        dla mnie uchwycenie naturalnych, niepowtarzalnych, żywych kadrów. Zawsze
+        staram się, aby emocje były na pierwszym planie. Umiejętnie wyłapane
+        momenty mogą stać się wspaniałą pamiątką na całe życie. Bardzo chętnie
+        dowiem się jak wyobrażacie sobie nasze fotograficzne spotkanie oraz
+        jakie są Wasze oczekiwania i plany związane z sesją.
       </p>
     </ContentWrapper>
     <StyledImage fluid={data.file.childImageSharp.fluid} />

@@ -1,8 +1,9 @@
 import React from "react"
+import { Gallery } from "gatsby-theme-gallery"
 
 const GalleryPage = () => (
   <>
-    <h1>GalleryPage</h1>
+    <Gallery />
   </>
 )
 

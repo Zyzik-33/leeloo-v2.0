@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/gallery.js"],"names":["GalleryPage"],"mappings":"2FAAA,gCAQeA,UANK,kBAClB,oCACE","file":"component---src-pages-gallery-js-a29df7b9ed9152985ad9.js","sourcesContent":["import React from \"react\"\n\nconst GalleryPage = () => (\n  <>\n    <h1>GalleryPage</h1>\n  </>\n)\n\nexport default GalleryPage\n"],"sourceRoot":""}
