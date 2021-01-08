@@ -9,6 +9,7 @@
     "@emotion/styled": "^11.0.0",
     "@mdx-js/mdx": "^1.6.21",
     "@mdx-js/react": "^1.6.21",
+    "@styled-icons/entypo-social": "^10.18.0",
     "axios": "^0.21.0",
     "babel-plugin-styled-components": "^1.11.1",
     "dotenv": "^8.2.0",
