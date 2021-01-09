@@ -13,15 +13,15 @@ const InstagramIcon = styled(Instagram)`
 `
 
 const FooterWrapper = styled(FooterBase)`
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 0 1.5rem;
-  background-color: #fffaf5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+        position: "fixed",
+        left: 0,
+        bottom: 0,
+        width: "100%",
+        padding: "0 1.5rem",
+        backgroundColor: "#fffaf5",
+        fontSize: 1,
+        alignItems: "center",
+        justifyContent: "center",
 `
 
 const Footer = () => {

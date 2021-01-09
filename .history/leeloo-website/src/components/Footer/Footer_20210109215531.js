@@ -18,10 +18,11 @@ const FooterWrapper = styled(FooterBase)`
   bottom: 0;
   width: 100%;
   padding: 0 1.5rem;
-  background-color: #fffaf5;
+  backgroundcolor: #fffaf5;
+  fontsize: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  alignitems: center;
+  justifycontent: center;
 `
 
 const Footer = () => {
