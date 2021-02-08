@@ -59,7 +59,8 @@ module.exports = {
       options: {
         clientId: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        albums: ["car-audi", "slowakia"],
+        albums: ["album-name-one", "album-name-two"],
+        // if you only have one album pass it as an array
       },
     },
     "gatsby-transformer-sharp",

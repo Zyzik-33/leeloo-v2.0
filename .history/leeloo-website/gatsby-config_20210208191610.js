@@ -55,13 +55,12 @@ module.exports = {
     `gatsby-theme-gallery`,
     `gatsby-plugin-mdx`,
     {
-      resolve: `gatsby-source-google-photos`,
+      resolve: "gatsby-source-google-photos",
       options: {
-        clientId: process.env.GOOGLE_CLIENT_ID,
-        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        albums: ["car-audi", "slowakia"],
+        albumsTitles: ["Car audi", "TITLE_B"],
       },
     },
+    // Recommanded to use with gatsby-image
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
   ],
