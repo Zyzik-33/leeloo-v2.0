@@ -54,15 +54,20 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-theme-gallery`,
     `gatsby-plugin-mdx`,
-    {
-      resolve: `gatsby-source-google-photos`,
-      options: {
-        clientId: process.env.GOOGLE_CLIENT_ID,
-        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        albums: ["car-audi", "slowakia"],
-      },
-    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: `image`,
+        maxResults: `1000`,
+        tags: `true`,
+        context: `true`,
+        prefix: `gatsby-source-cloudinary/`,
+      },
+    },
   ],
 }

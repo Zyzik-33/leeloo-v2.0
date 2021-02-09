@@ -55,9 +55,9 @@ const RightNav = ({ open }) => {
         <NavigationListItem>
           <Link to="/gallery">Gallery</Link>
         </NavigationListItem>
-        <NavigationListItem>
-          <Link to="/gphotos">GooglePhotos</Link>
-        </NavigationListItem>
+        {/* <NavigationListItem>
+          <Link to="/cloudinary">Cloudinary</Link>
+        </NavigationListItem> */}
         {/* <NavigationListItem>
           <Link to="/contact">Contact</Link>
         </NavigationListItem> */}
